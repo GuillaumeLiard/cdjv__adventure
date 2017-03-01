@@ -1,0 +1,102 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop2",
+			"baseLayerID": 3,
+			"baseLayerMD5": "9cea5cb1c916a71fd364bb261e450030.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "obstacle",
+			"scripts": [[122,
+					171,
+					[["whenGreenFlag"],
+						["doForever", [["doIf", ["touching:", "hero"], [["say:duration:elapsed:from:", "touché !", 2]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 1,
+					"baseLayerMD5": "88f49e8a07eecf0b843782ddb367ddc0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 227,
+					"rotationCenterY": 25
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 247,
+			"scratchY": 134,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "hero",
+			"scripts": [[137, 263, [["whenKeyPressed", "right arrow"], ["changeXposBy:", 10]]],
+				[303, 348, [["whenKeyPressed", "up arrow"], ["changeYposBy:", 10]]],
+				[368, 183, [["whenKeyPressed", "down arrow"], ["changeYposBy:", -10]]],
+				[68, 97, [["whenKeyPressed", "left arrow"], ["changeXposBy:", -15]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "lutin 1",
+					"baseLayerID": 2,
+					"baseLayerMD5": "86ce8da02509c38a9f2e01edfaf7ebed.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -165,
+			"scratchY": -126,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko\/20100101 Firefox\/50.0",
+		"scriptCount": 5,
+		"swfVersion": "v454",
+		"spriteCount": 2,
+		"videoOn": false,
+		"projectID": "147685459",
+		"flashVersion": "LNX 24,0,0,186"
+	}
+}
